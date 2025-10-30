@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asifur Rahaman | Portfolio</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+</head>
+
+<body>
+    <nav class="navbar" aria-label="Main navigation">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li class="nav-skills-link"><a href="#skills">Skills</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li class="nav-certifications-link"><a href="#certifications">Certifications</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li>
+                <button id="darkModeToggle" class="dark-mode-btn" aria-label="Toggle dark mode">
+                    <span id="darkModeIcon">🌙</span>
+                    <span id="darkModeText">Dark Mode</span>
+                </button>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <header>
+            <div class="photo-frame">
+                <img src="asifurimage.jpg" alt="Asifur's Photo" id="profile-pic" loading="lazy">
+            </div>
+            <h1>Asifur Rahaman</h1>
+            <p>AI & ML Developer | Computer Vision and Robotics Enthusiast</p>
+            <div class="contact-icons">
+                <a href="#" id="locationIconWrapper">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span id="locationText">Kolkata, West Bengal</span>
+                </a>
+                
+                <div class="top-icons-wrapper">
+                    <a href="mailto:asifurrahaman2018@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/asifur8282" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/asifur06rahaman" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://drive.google.com/file/d/1rbg8AlL4TryECGor48AjINCk5DPgjgdY/view?usp=sharing" target="_blank" aria-label="View Resume"><i class="fas fa-file-alt"></i></a>
+                </div>
+            </div>
+            
+
+
+        </header>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="card-content">
+                <p>Aspiring AI and ML Engineer passionate about building vision-based intelligent systems that bridge perception and action. Experienced with TensorFlow, OpenCV, and FastAPI, with a focus on real-time robotics and applied AI. Demonstrated success in YOLO model tuning, gaze-based control systems, and self-balancing robotics. Currently advancing skills in RAG and Agentic AI.</p>
+            </div>
+        </section>
+
+        <section id="education" class="education">
+            <h2>Education</h2>
+            <div class="card-content">
+                <p>
+                    <strong>Techno International New Town (2024–2028)</strong><br>
+                    B.Tech in Computer Science and Engineering<br>
+                    1st Year Y.G.P.A - 8.03
+                </p>
+                <p>
+                    <strong>Saifee Golden Jubilee English Public School (2010–2024)</strong><br>
+                    Class XII - ISC: 84.67%<br>
+                    Class X - ICSE: 92.33%
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <h2>Technical Skills</h2>
+            <ul>
+                <li class="list-card-item"><strong>Programming:</strong> Python, C, Java</li>
+                <li class="list-card-item"><strong>AI & ML:</strong> Deep Learning, Computer Vision, TensorFlow, YOLOv8, CNNs, Decision Trees, Scikit-learn</li>
+                <li class="list-card-item"><strong>MLOps & Backend:</strong> FastAPI, Docker (basic image/container handling), Joblib, Uvicorn</li>
+                <li class="list-card-item"><strong>Tools & Frameworks:</strong> OpenCV, MediaPipe, NumPy, Pandas, NetworkX</li>
+                <li class="list-card-item"><strong>Microcontrollers & Robotics:</strong> ESP32, Arduino, Servo & Sensor Integration, PID Control</li>
+                <li class="list-card-item"><strong>Generative AI & LLMs:</strong> Prompt Engineering, RAG & Agentic AI (Learning)</li>
+                <li class="list-card-item"><strong>Software:</strong> Canva, Adobe Photoshop, PowerPoint</li>
+            </ul>
+        </section>
+
+        <section id="achievements" class="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li class="list-card-item"><strong>Runner-up, Equilibrix - Srijan'25 (Jadavpur University)</strong>: Built a self-balancing robot using PID control.</li>
+                <li class="list-card-item"><strong>Runner-up, Tech Twister (Tech Quiz)</strong>, Techno International New Town.</li>
+                <li class="list-card-item"><strong>Selected among 130+ teams</strong> in Internal Smart India Hackathon 2025 at Techno International New Town.</li>
+            </ul>
+        </section>
+
+        <section id="certifications" class="certifications-section">
+            <h2>Certifications</h2>
+            <ul>
+                <li class="list-card-item"><strong>IBM:</strong> Generative AI: Prompt Engineering Basics</li>
+                <li class="list-card-item"><strong>IBM:</strong> Generative AI: Introduction and Applications</li>
+                <li class="list-card-item"><strong>Google:</strong> Generative AI for Software Developers</li>
+                <li class="list-card-item"><strong>Google:</strong> Introduction to AI</li>
+                <li class="list-card-item"><strong>Google:</strong> Maximize Productivity With AI Tools</li>
+                <li class="list-card-item"><strong>Google:</strong> Discover the Art of Prompting</li>
+                <li class="list-card-item"><strong>NPTEL:</strong> Programming, Data Structures and Algorithms Using Python</li>
+                <li class="list-card-item"><strong>NPTEL:</strong> The Joy of Computing Using Python</li>
+                <li class="list-card-item"><strong>Duke University:</strong> Java Programming: Solving Problems with Software</li>
+            </ul>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>Projects</h2>
+            <article class="project-card">
+                <h3>Classroom Compass (AI Attention Detection System)</h3>
+                <p>Developed a YOLOv8x segmentation-based pipeline to isolate head-torso regions of students. Integrated a TensorFlow CNN model to classify focused vs. distracted students and served the model via a FastAPI backend. (Repo: github.com/asifur8282/Classroom-Person-Segregation-Model)</p>
+            </article>
+            <article class="project-card">
+                <h3>Vision-Guided GazeBot</h3>
+                <p>Built a camera-based control interface where an ESP32-driven robotic vehicle aligns its direction with the user's head position tracked via MediaPipe and OpenCV. (Repo: github.com/asifur8282/ML-Vision-Guided-GazeBot)</p>
+            </article>
+            <article class="project-card">
+                <h3>PID-Based Self-Balancing Bot</h3>
+                <p>Designed a two-wheeled bot using PID control algorithms for dynamic balance correction. Integrated sensor feedback and motor control loops for stability optimization.</p>
+            </article>
+            <article class="project-card">
+                <h3>Earthquake Survivor Detection (YOLO Model Tuning)</h3>
+                <p>Tuned a YOLO-based object detector for post-disaster search-and-rescue tasks to identify survivors or critical objects in rubble imagery.</p>
+            </article>
+            <article class="project-card">
+                <h3>Iris Flower Prediction</h3>
+                <p>Implemented a Decision Tree Classifier using scikit-learn to classify iris flower species, demonstrating understanding of supervised learning workflows.</p>
+            </article>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Asifur Rahaman. All rights reserved.</p>
+        </footer>
+    </main>
+</body>
+
+</html>
