@@ -614,3 +614,44 @@ body.dark-mode .contact-icons i:hover {
     background: #333;
     transform: scale(1.3);
 }
+
+/* --- DARK MODE: CONTENT LINK STYLES (improved contrast & accessibility) --- */
+/* Target content links inside the main container and typical sections, leaving navbar/contact icons as defined above */
+body.dark-mode .container a,
+body.dark-mode .projects a,
+body.dark-mode .about a,
+body.dark-mode .education a,
+body.dark-mode .achievements a,
+body.dark-mode .skills-section a,
+body.dark-mode .certifications-section a,
+body.dark-mode .project-card a,
+body.dark-mode footer a {
+    color: #40cfff; /* bright cyan for strong contrast against dark background */
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+body.dark-mode .container a:visited,
+body.dark-mode .project-card a:visited,
+body.dark-mode footer a:visited {
+    color: #9beaff; /* softer visited tone */
+}
+
+body.dark-mode .container a:hover,
+body.dark-mode .container a:focus,
+body.dark-mode .project-card a:hover,
+body.dark-mode .project-card a:focus,
+body.dark-mode footer a:hover,
+body.dark-mode footer a:focus {
+    color: #ffe600; /* highlight on hover/focus */
+    outline: none;
+}
+
+/* High-visibility focus ring for keyboard users */
+body.dark-mode .container a:focus,
+body.dark-mode .project-card a:focus,
+body.dark-mode footer a:focus {
+    box-shadow: 0 0 0 3px rgba(64,207,255,0.12), 0 0 0 6px rgba(255,230,0,0.06);
+    border-radius: 4px;
+}
