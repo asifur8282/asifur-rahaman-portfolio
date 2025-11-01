@@ -28,7 +28,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
-    background: #e7f5ff; /* <-- NAVBAR COLOR FIX */
+    background: #e7f5ff; 
     backdrop-filter: blur(10px);
     z-index: 1001;
     box-shadow: 0 2px 5px rgba(0,0,0,0.05);
@@ -218,7 +218,7 @@ footer { grid-area: main-footer; }
         overflow-y: auto;
     }
 
-    /* --- SCROLLING FIX --- */
+
     .certifications-section {
         grid-area: certifications-area;
         position: sticky;
@@ -508,6 +508,47 @@ footer {
     color: #888;
     border-radius: 0 0 1em 1em;
     transition: background 0.3s, color 0.3s;
+}
+
+/* --- LIGHT MODE: CONTENT LINK STYLES (improve visibility & accessibility) --- */
+/* Target content links inside the main container and typical sections, leaving navbar/contact icons untouched */
+.container a,
+.projects a,
+.about a,
+.education a,
+.achievements a,
+.skills-section a,
+.certifications-section a,
+.project-card a,
+footer a {
+    color: #1a4e8a; /* deep blue matching section headings */
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    transition: color 0.15s ease, background-color 0.15s ease;
+}
+
+.container a:visited,
+.project-card a:visited,
+footer a:visited {
+    color: #6b8fb3; /* softer visited tone */
+}
+
+.container a:hover,
+.container a:focus,
+.project-card a:hover,
+.project-card a:focus,
+footer a:hover,
+footer a:focus {
+    color: #0077cc; /* stronger blue on hover/focus */
+    outline: none;
+}
+
+/* Focus ring for keyboard users (light mode) */
+.container a:focus,
+.project-card a:focus,
+footer a:focus {
+    box-shadow: 0 0 0 3px rgba(43,108,176,0.12);
+    border-radius: 4px;
 }
 
 /* ===================== DARK MODE ===================== */
